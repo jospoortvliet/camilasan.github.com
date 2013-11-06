@@ -1,4 +1,4 @@
-body { font: 100%/1.6 georgia, sans-serif; padding: 5px 0 0 35px; }
+body { font: 100%/1.6 georgia, sans-serif; height: 100%; padding: 5px 0 5px 35px; border-left:15px solid #ccc;}
 a, a:hover, a:link { color: #000; }
 li { padding: 2px; }
 
