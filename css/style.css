@@ -1,0 +1,13 @@
+body { font: 100%/1.6 georgia, sans-serif; padding: 5px 0 0 35px; }
+a, a:hover, a:link { color: #000; }
+li { padding: 2px; }
+
+strong { padding: 4px; }
+.highlight-blue { background: #CCFFFF; }
+.highlight-yellow { background: #FFFF99; }
+.highlight-green { background: #CCFFCC; }
+.highlight-red { background: #FF9966; }
+.highlight-pink { background: #FFCCFF; }
+
+
+
