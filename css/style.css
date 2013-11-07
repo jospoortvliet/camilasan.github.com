@@ -9,5 +9,9 @@ strong { padding: 4px; }
 .highlight-red { background: #FF9966; }
 .highlight-pink { background: #FFCCFF; }
 
+div { width: 460px; float: left; }
+hr { width: 90%; color: #fff; border: 0px; text-align: center; display: block;  }
+h3 { margin-top: 40px; border-top: solid 1px #ccc; width: 30%; }
+
 
 
