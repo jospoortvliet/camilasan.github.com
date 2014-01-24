@@ -10,9 +10,8 @@ strong { padding: 4px; }
 .highlight-pink { background: #FFCCFF; }
 .highlight-orange { background: #FFCC99; }
 
-div { width: 400px; float: left; }
-hr { width: 90%; color: #fff; border: 0px; text-align: center; display: block;  }
-h3 { padding-top: 40px; }
+div { width: 30%; float: left; padding: 0 10px 10px 0; }
+h3 { padding-top: 20px; }
 
 
 
