@@ -5,7 +5,7 @@
     <title>Camila Ayres | Ruby on Rails Workshop (for beginners)</title>
     <meta name="description" content="About me: Camila Ayres">
     <meta name="author" content="Camila Ayres">
-    <meta name="keywords" content="HTML,CSS,JavaScript,Programming,Ruby on Rails,C,KDE,camilasan">
+    <meta name="keywords" content="Ruby on Rails,workshop,camilasan">
 
     <link rel="stylesheet" type="text/css" href="../css/style.css">
   </head>
@@ -16,196 +16,94 @@
     </header>
 
     <ul>
-      <li><a href="#ror">Ruby on Rails!??</a></li>
-      <li><a href="#rvm">RVM</a></li>
-      <li><a href="#install">Setting up your dev environment</a>
-          <ul>
-            <li><a href="#linux">Linux</a></li>
-            <li><a href="#mac">Mac</a></li>
-            <li><a href="#windows">Windows</a></li>
-          </ul>
+      <li><a href="#ror">Intro</a>
+        <ul>
+          <li><a href="#mvc">Model, View and Controller</a></li>
+          <li><a href="#routes">Routes</a></li>
+          <li><a href="#rvm">RVM (Ruby Version Manager)</a></li>
+          <li><a href="#gems">Gems</a></li>
+          <li><a href="#bundler">Bundler</a></li>
+          <li><a href="#rake">Rake</a></li>
+        </ul>
       </li>
-      <li><a href="#gems">Gems</a></li>
-      <li><a href="#model">Model, View and Controller</a></li>
-      <li><a href="#rakeroutes">Rake and Routes</a></li>
+      <li><a href="install.html" target="_blank" class="highlight-green">Setting up your dev environment</a></li>
       <li><a href="#web">Develop your own web application!</a></li>
-      <li><a href="#bored">Already bored? There is more.</a></li>
       <li><a href="#js">Add JS libraries and style it (CSS)</a></li>
       <li><a href="#links">Extra links</a></li>
     </ul>
 
-
-    <h2 id="ror">Ruby on Rails!?</h2>
+    <h2 id="ror" class="highlight-light">Intro</h2>
 
     <p>Rails is a web application framework running on the Ruby programming language. </p>
 
     <p>More info at <a href="http://rubyonrails.org/" target="_blank">http://rubyonrails.org/</a></p>
 
-    <p class="right"><a href="#top" class="highlight-red">top</a></p>
+    <p class="right"><a href="#top" class="highlight-orange">top</a></p>
 
-    <h2 id="rvm">RVM</h2>
+    <h3 id="mvc" class="highlight-light">Model, View and Controller</h3>
+
+    <h4>Model</h4>
+
+    <p></p>
+
+    <h4>View</h4>
+
+    <h4>Controller</h4>
+
+    <p class="right"><a href="#top" class="highlight-orange">top</a></p>
+
+
+    <h3 id="routes" class="highlight-light">Routes</h3>
+
+    <p></p>
+
+    <p class="right"><a href="#top" class="highlight-orange">top</a></p>
+
+    <h3 id="rvm" class="highlight-light">RVM (Ruby Version Manager)</h3>
 
     <p>RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of <a href="#gems">gems</a>.</p>
 
     <p>More info at <a href="http://rvm.io" target="_blank">http://rvm.io</a></p>
 
-    <p class="right"><a href="#top" class="highlight-red">top</a></p>
+    <p class="right"><a href="#top" class="highlight-orange">top</a></p>
 
-    <h2 id="install">Setting up your dev environment</h2>
-
-    <h3 id="linux">Linux</h3>
-
-    <ul class="space">
-      <li>
-        Install <a href="#rvm">RVM</a> (<strong class="highlight-yellow">not as root!</strong>):
-
-        <code>
-          $ \curl -sSL https://get.rvm.io | bash -s stable --rails
-        </code>
-
-      </li>
-      <li>
-        Edit your .bashrc and add:
-
-        <code>
-          [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-        </code>
-      </li>
-      <li>Reload/reopen your terminal.</li>
-      <li>
-        Check your installation running:
-        <code>
-          $ rvm --version<br>
-          $ ruby --version<br>
-          $ rails --version<br>
-        </code>
-      </li>
-      <li>
-        The default database for Rails is sqlite3. So you need to check if you have it installed:
-        <code>
-          $ sqlite3 --version
-        </code>
-
-        Otherwise, please, run:
-        <code>
-          $zypper in sqlite-devel
-        </code>
-
-      </li>
-      <li>
-        Then if all goes well you can create a Rails project:
-
-        <code>
-          $ rails new blah<br>
-          $ cd blah<br>
-          $ rails s<br> # runs the server
-        </code>
-
-        If there are no error messages and you can see the welcome message at <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>, then you are good to start to code :)
-      </li>
-      <li>
-        There is a <b>common error</b> that you can get when you run rails server:
-
-        <code>
-          /~/username/.rvm/gems/ruby-2.1.1/gems/execjs-2.0.2/lib/execjs/runtimes.rb:51:in `autodetect': Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes. (ExecJS::RuntimeUnavailable)
-        </code>
-
-        <b>Possible solution:</b>
-
-
-        In the root for your project, there is a file called Gemfile. This file contains the list of Gems that are being used in your project.
-        Add the Gem 'therubyracer' to this list:
-
-        <code>
-          gem 'therubyracer'
-        </code>
-
-        Run bundle install and then rails server should be working now.
-
-        <code>
-          $ bundle install<br>
-          $ rails s
-        </code>
-
-        More info at <a href="https://github.com/sstephenson/execjs/issues/71" target="_blank">https://github.com/sstephenson/execjs/issues/71</a>.
-      </li>
-      <li>For coding you can use any text editor you like. I suggest Sublime Text: <a href="http://www.sublimetext.com/2" target="_blank">http://www.sublimetext.com/2</a>. It has a good support for Ruby and Rails.</li>
-    </ul>
-
-    <p>More info at <a href="http://rvm.io" target="_blank">http://rvm.io</a></p>
-
-    <h3 id="mac">OS X</h3>
-
-    <ul>
-      <li>You can see the howto here: <a href="http://guides.railsgirls.com/install/#setup-for-os-x" target="_blank">http://guides.railsgirls.com/install/#setup-for-os-x</a></li>
-    </ul>
-
-    <h3 id="windows">Windows</h3>
-
-    <ul>
-      <li>You can see the howto here: <a href="http://guides.railsgirls.com/install/#setup-for-windows" target="_blank">http://guides.railsgirls.com/install/#setup-for-windows</a></li></li>
-      <li>Just remember that on Windows you need to use the command line terminal that comes with your Rails installation. The Windows cmd doesn't load <a href="#rvm">rvm</a>.</li>
-    </ul>
-
-    <p class="right"><a href="#top" class="highlight-red">top</a></p>
-
-    <h2 id="gems">Gems and Bundler</h2>
-
-    <h3>Gems</h3>
+    <h3 id="gems" class="highlight-light">Gems</h3>
 
     <p>Rails is a Gem. Gems are libraries written in Ruby. You will also hear about RubyGems: packaging system designed to facilitate the creation, sharing and installation of libraries</p>
 
     <p>More info at <a href="https://www.ruby-lang.org/en/libraries/" target="_blank">https://www.ruby-lang.org/en/libraries/</a></p>
 
-    <h3>Bundler</h3>
+    <h3 id="bundler" class="highlight-light">Bundler</h3>
 
-    <p>You can use Bundler to manage the gems of your project. Bundler is the default gem manager for Rails 3,</p>
+    <p>Bundler manages the gems of your project. It is the default gem manager for Rails 3.</p>
 
     <p>More info at <a href="http://bundler.io/" target="_blank">http://bundler.io/</a></p>
 
-    <p class="right"><a href="#top" class="highlight-red">top</a></p>
+    <p class="right"><a href="#top" class="highlight-orange">top</a></p>
 
-    <h2 id="model">Model, View and Controller</h2>
-
-    <h3>Model</h3>
-
-    <p></p>
-
-    <h3>View</h3>
-
-    <h3>Controller</h3>
-
-    <p class="right"><a href="#top" class="highlight-red">top</a></p>
-
-    <h2 id="rakeroutes">Rake and Routes</h2>
-
-
+    <h3 id="rake" class="highlight-light">Rake</h3>
 
     <p>More info at <a href="http://rake.rubyforge.org/" target="_blank">http://rake.rubyforge.org/</a></p>
 
-    <p class="right"><a href="#top" class="highlight-red">top</a></p>
+    <p class="right"><a href="#top" class="highlight-orange">top</a></p>
 
-    <h2 id="web">Develop your own web application!</h2>
+    <h2 id="web" class="highlight-light">Develop your own web application!</h2>
 
-    <p class="right"><a href="#top" class="highlight-red">top</a></p>
-
-    <h2 id="#bored">Bored?</h2>
-
-    <p class="right"><a href="#top" class="highlight-red">top</a></p>
+    <p class="right"><a href="#top" class="highlight-orange">top</a></p>
 
     <h2 id="#js">Add JS libraries and style it (CSS)</h2>
 
-    <p class="right"><a href="#top" class="highlight-red">top</a></p>
+    <p class="right"><a href="#top" class="highlight-orange">top</a></p>
 
-
-    <h2 id="links">Extra links</h2>
+    <h2 id="links" class="highlight-light">Extra links</h2>
 
     <ul>
       <li>Rails Girls Berlin: <a href="http://railsgirlsberlin.de/" target="_blank">http://railsgirlsberlin.de/</a></li>
       <li>What is a Gem: <a href="http://guides.rubygems.org/what-is-a-gem/" target="_blank">http://guides.rubygems.org/what-is-a-gem/</a></li>
+      <li>Intermediate Rails: Understanding Models, Views and Controllers: <a href="http://betterexplained.com/articles/intermediate-rails-understanding-models-views-and-controllers" target="_blank">http://betterexplained.com/articles/intermediate-rails-understanding-models-views-and-controllers</a></li>
     </ul>
 
-    <p class="right"><a href="#top" class="highlight-red">top</a></p>
+    <p class="right"><a href="#top" class="highlight-orange">top</a></p>
 
   </body>
 </html>

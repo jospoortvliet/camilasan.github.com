@@ -11,10 +11,12 @@ strong { padding: 4px; }
 .highlight-red { background: #FF9966; padding: 2px;}
 .highlight-pink { background: #FFCCFF; padding: 2px;}
 .highlight-orange { background: #FFCC99; padding: 2px;}
+.highlight-light { background: #fffccc; padding: 2px;}
 .right {text-align: right; }
 
 code { padding: 10px; margin: 5px 0 5px 0; display: block; background-color: #CCFFCC; }
 div { width: 30%; float: left; padding: 0 10px 10px 0; }
+
 h3 { padding-top: 20px; }
 
 .tutorial {width: 90%;}
