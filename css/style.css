@@ -12,7 +12,8 @@ strong { padding: 4px; }
 .highlight-pink { background: #FFCCFF; padding: 2px;}
 .highlight-orange { background: #FFCC99; padding: 2px;}
 .highlight-light { background: #fffccc; padding: 2px;}
-.right {text-align: right; }
+.right {text-align: right;}
+.center {text-align: center;}
 
 code { padding: 10px; margin: 5px 0 5px 0; display: block; background-color: #CCFFCC; }
 div { width: 30%; float: left; padding: 0 10px 10px 0; }
