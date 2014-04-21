@@ -1,17 +1,21 @@
-body { font: 100%/1.6 georgia, sans-serif; height: 100%; padding: 5px 0 5px 35px; }
+body { font: 82%/1.5 georgia, sans-serif; height: 100%; padding: 5px 0 5px 35px; }
 a, a:hover, a:link { color: #000; }
 li { padding: 2px; }
 
 strong { padding: 4px; }
-.highlight-blue { background: #CCFFFF; }
-.highlight-yellow { background: #FFFF99; }
-.highlight-green { background: #CCFFCC; }
-.highlight-red { background: #FF9966; }
-.highlight-pink { background: #FFCCFF; }
-.highlight-orange { background: #FFCC99; }
+.highlight-blue { background: #CCFFFF; padding: 2px;}
+.highlight-yellow { background: #FFFF99; padding: 2px;}
+.highlight-green { background: #CCFFCC; padding: 2px;}
+.highlight-red { background: #FF9966; padding: 2px;}
+.highlight-pink { background: #FFCCFF; padding: 2px;}
+.highlight-orange { background: #FFCC99; padding: 2px;}
+.right {text-align: right; }
 
+code { padding: 10px; display: block; background-color: #CCFFCC; width: 80%; }
 div { width: 30%; float: left; padding: 0 10px 10px 0; }
 h3 { padding-top: 20px; }
+
+.tutorial {width: 90%;}
 
 
 
