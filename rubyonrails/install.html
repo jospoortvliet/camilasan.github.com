@@ -50,14 +50,12 @@
           $ ruby --version<br>
           $ rails --version<br>
         </code>
+        You should get version numbers, not errors or missing tools!
+        
       </li>
       <li>
-        The default database for Rails is sqlite3. So you need to check if you have it installed:
-        <code>
-          $ sqlite3 --version
-        </code>
-
-        Otherwise, please, run:
+        The default database for Rails is sqlite3. You need to have the sqlite-devel package installed.
+        Please run:
         <code>
           $zypper in sqlite-devel
         </code>
